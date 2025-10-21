@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Full-Stack Developer portfolio showcasing modern web applications built with Angular, Firebase, React, and more. Explore projects featuring real-time dashboards, gaming platforms, and innovative web solutions.">
-    <meta property="og:title" content="Portfolio - Full-Stack Developer">
-    <meta property="og:description" content="Full-Stack Developer portfolio showcasing modern web applications and innovative web solutions.">
-    <meta property="og:type" content="website">
-    <title>Portfolio - Full-Stack Developer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Full-Stack Developer portfolio showcasing modern web applications built with Angular, Firebase, React, and more." />
+    <meta property="og:title" content="Portfolio - Full-Stack Developer" />
+    <meta property="og:description" content="Full-Stack Developer portfolio showcasing modern web applications and innovative web solutions." />
+    <meta property="og:type" content="website" />
+    <title>Portfolio - Kamil Ahmed</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Top-right name/logo -->
+    <a id="topLogo" href="#hero" class="top-logo">Kamil Ahmed</a>
+
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="hero-bg">
             <div class="hero-blob-1"></div>
             <div class="hero-blob-2"></div>
         </div>
         
         <div class="hero-content">
-            <h1>Full-Stack Developer</h1>
+            <h1>Kamil Ahmed | Full-Stack Developer</h1>
             <p class="hero-subtitle">Specializing in Angular, Firebase & React</p>
             <p class="hero-description">
                 Building fast, scalable, and user-friendly web applications with modern technologies
@@ -85,7 +88,7 @@
                     </a>
                     
                     <div class="social-links">
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/kamilahmed10121" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
                             <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                             </svg>
@@ -101,6 +104,60 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="contact-form-card">
+                <h3>Contact Me</h3>
+                <p class="contact-sub">Send a message — I typically respond within a few business days.</p>
+
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" required placeholder="Your full name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required placeholder="you@example.com" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text" required placeholder="Short summary">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or question"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button id="submitBtn" type="submit" class="btn-primary">Send Message</button>
+                        <div id="formStatus" role="status" aria-live="polite" class="form-status"></div>
+                    </div>
+                </form>
+            </div>
+
+            <aside class="contact-info">
+                <h4>Contact Info</h4>
+                <ul class="info-list">
+                    <li><strong>Email:</strong> <a href="mailto:kamilahmed10121@gmail.com">kamilahmed10121@gmail.com</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:+923480320674">03480320674</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/kamilahmed1012" target="_blank" rel="noopener noreferrer">github.com/kamilahmed1012</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kamilahmed10121" target="_blank" rel="noopener noreferrer">linkedin.com/in/kamilahmed10121</a></li>
+                </ul>
+
+                <div class="contact-note">
+                    <p>Or use the "Get in Touch" button above to open an email client directly.</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js"></script>
+    <script type="module" src="./auth.js"></script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
